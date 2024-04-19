@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+    background-color: lightblue;
+    text-align: left;
+}
+    h1{
+    color:navy;
+    margin:20px;
+    text-align: center;
+    font-style: oblique;
+    border: groove 10px ;
+    text-shadow: 5px 5px white;
+}
+    h3{
+    font-style: oblique; 
+    color:navy;
+}
+    input{
+    border: outset;
+    border-radius: 20px;
+}
+    textarea{
+    border: outset;
+    border-radius: 20px;
+}
+    label{
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <h1>GLA UNIVERSITY MATHURA</h1>
+        <H3>REGISTERATION FORM</H3>
+        <fieldset>        
+        <label>STUDENT NAME:</label>
+        <input type="text" placeholder="Enter Your first Name" required>
+        <input type="text" placeholder="Enter Your last Name" required><br><br>
+        <label>FATHER'S NAME:</label>
+        <input type="text" placeholder="Enter Your Father Name" required><br><br> 
+        <label>FATHER'S EMAIL:</label>
+        <input type="email" id="email" placeholder="Enter Your valid email"><br><br> 
+        <label>GENDER:</label>
+        <input type="radio" id="gender" name="gender" value="male" required>male
+        <input type="radio" id="gender" name="gender" value="female" required>female<br><br>
+        <label>EMAIL:</label>
+        <input type="email" id="email" placeholder="Enter Your valid email" required><br><br> 
+        <label>STUDENT's D.O.B:</label>
+        <input type="datetime-local" name="datetime-local" required><br><br>
+        <label>PHONE NUMBER</label>
+        <input type="number" name="number" minlength="0" maxlength="10" placeholder="Enter Your Number" required> <br><br>
+        <label>ADDRESS:</label><br>
+        <textarea rows="4" cols="40" placeholder="Enter Your Full Address" required></textarea><br> <br>
+        <label>STATE</label>
+        <select>
+            <option value="none">none</option>
+            <option value="agra"><agra/option>
+            <option>delhi</option>
+            <option>uttar pradesh</option>
+            <option>rajasthan</option>
+            <option>gujrat</option>
+            <option>tamilnadu</option>
+        </select><br><br>
+        <label>CURRENT HOSTEL BLOCK(if any)</label>
+        <input type="text" name="text"><br><br>
+        <label>ENTER CGP FOR LAST SEMESTER</label>
+        <input type="radio" name="radio" value="radio">lie between 8.02 to 10
+        <input type="radio" name="radio" value="radio">Below than 6.0<br><br>
+        <label>HOSTEL AND MESS FEE STATUS</label><BR>
+        <input type="checkbox">HOSTEL FEE PAID<BR>
+        <input type="checkbox">MESS FEE PAID<BR>
+        <input type="checkbox">NONE PAID<BR><br>
+        <input type="button" name="submit" value="submit"> 
+        </fieldset>
+    </form> 
+    </body>
+    </html>
+</body>
+</html>
